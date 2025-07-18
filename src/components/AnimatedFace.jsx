@@ -15,7 +15,7 @@ function AnimatedFace() {
         ease: "easeInOut",
       }}
       style={{
-        width: "23%",
+        width: "320px",
         borderRadius: "50%",
         display: "block",
         margin: "0 auto",
