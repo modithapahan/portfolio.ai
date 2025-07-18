@@ -1,26 +1,22 @@
 .header {
   top: 0;
-  background-color: #ffffff;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   z-index: 1000;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
+  width: 100%;
+  z-index: 2;
+  background: transparent;
 }
 
 .social-icons a {
   margin-left: 1rem;
-  color: #333;
+  color: #ffffff;
   font-size: 1.5rem;
   transition: color 0.2s;
 }
 
 .social-icons a:hover {
-  color: #0077b5; /* LinkedIn blue */
+  color: #0077b5;
 }
