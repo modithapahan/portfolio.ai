@@ -19,7 +19,7 @@ function BottomMenu() {
 
   const menuItems = [
     { label: "Me", iconClass: <i style={{color: "green"}} className="fa-solid fa-user fa-xs"></i> },
-    { label: "Projects", iconClass: <i style={{color: "light-green"}} className="fa-solid fa-briefcase fa-xs"></i> },
+    { label: "Projects", iconClass: <i style={{color: "gray"}} className="fa-solid fa-briefcase fa-xs"></i> },
     { label: "Skills", iconClass: <i style={{color: "purple"}} className="fa-solid fa-layer-group fa-xs"></i> },
     { label: "Certify", iconClass: <i style={{color: "orange"}} class="fa-solid fa-certificate fa-xs"></i> },
     { label: "Contact", iconClass: <i style={{color: "brown"}} className="fa-solid fa-id-badge fa-xs"></i> },
