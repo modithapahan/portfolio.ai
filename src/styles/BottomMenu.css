@@ -1,0 +1,43 @@
+.container {
+  text-align: center;
+  margin-top: 2rem;
+  /* margin-bottom: 4rem; */
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none; 
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5px 8px;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  border: 1px solid;
+  backdrop-filter: blur(10px);
+  border-color: rgba(255, 255, 255, 0.2);
+  transition: border-color 1s ease;
+}
+
+.label {
+  font-weight: 500;
+  color: white;
+  margin-bottom: 5px;
+}
