@@ -19,10 +19,10 @@ function NavMenu() {
   };
 
   const menuItems = [
-    { label: "Me", iconClass: <i className="fa-solid fa-user"></i> },
-    { label: "Projects", iconClass: <i className="fa-solid fa-briefcase"></i> },
-    { label: "Skills", iconClass: <i className="fa-solid fa-layer-group"></i> },
-    { label: "Contact", iconClass: <i className="fa-solid fa-id-badge"></i> },
+    { label: "Me", iconClass: <i style={{color: "green"}} class="fa-solid fa-face-grin-wide"></i> },
+    { label: "Projects", iconClass: <i style={{color: "gray"}} className="fa-solid fa-briefcase"></i> },
+    { label: "Skills", iconClass: <i style={{color: "purple"}} className="fa-solid fa-layer-group"></i> },
+    { label: "Contact", iconClass: <i style={{color: "brown"}} className="fa-solid fa-id-badge"></i> },
   ];
 
   return (
