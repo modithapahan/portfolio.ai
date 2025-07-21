@@ -1,13 +1,13 @@
 import React from "react";
-import "../styles/ProfileCard.css"; // style below
-import NavMenu from "./NavMenu";
+import "../styles/ProfileCard.css";
 import BackgroundEffect from './BackgroundEffect';
+import BottomMenu from "./BottomMenu";
 
 function ProfileCard() {
   return (
     <>
+      <BackgroundEffect />
       <div class="card-wrapper">
-        <BackgroundEffect />
         <div className="profile-card">
           <div className="avatar-section">
             <img
@@ -34,16 +34,16 @@ function ProfileCard() {
 
           <div className="bio">
             <p>
-              I'm Raphaël Giraud, a 21-year-old full-stack developer specializing in
-              AI, currently rocking it at 42 Paris. Before tech, I was a mountain
-              biker! Now at LightOn AI, I get to play with some cool AI stuff. I
-              love tech, entrepreneurship, and building awesome SaaS products.
-              Voilà! What about you?
+              I'm Raphaël Giraud, a 21-year-old full-stack developer
+              specializing in AI, currently rocking it at 42 Paris. Before tech,
+              I was a mountain biker! Now at LightOn AI, I get to play with some
+              cool AI stuff. I love tech, entrepreneurship, and building awesome
+              SaaS products. Voilà! What about you?
             </p>
           </div>
         </div>
       </div>
-      <NavMenu />
+      <BottomMenu />
     </>
   );
 }
