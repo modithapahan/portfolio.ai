@@ -11,7 +11,7 @@ function ResponsePage() {
   useEffect(() => {
     const fetchReply = async () => {
       const res = await fetch(
-        "https://portfoliobackend-production-ce66.up.railway.app/",
+        "https://portfoliobackend-production-ce66.up.railway.app",
         {
           method: "POST",
           headers: {
