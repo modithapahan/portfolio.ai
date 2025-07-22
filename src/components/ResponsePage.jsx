@@ -10,16 +10,13 @@ function ResponsePage() {
 
   useEffect(() => {
     const fetchReply = async () => {
-      const res = await fetch(
-        "https://portfoliobackend-production-ce66.up.railway.app",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ message: query }),
-        }
-      );
+      const res = await fetch("https://portfolio-backend-sr2kvq.fly.dev", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message: query }),
+      });
 
       const data = await res.json();
       setReply(data.reply);
