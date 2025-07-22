@@ -5,6 +5,7 @@ import "./App.css";
 
 import Home from "./components/Home";
 import ProfileCard from "./components/ProfileCard";
+import ResponsePage from "./components/ResponsePage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<ProfileCard />} />
+          <Route path="/response" element={<ResponsePage />} />
         </Routes>
       </Router>
     </div>

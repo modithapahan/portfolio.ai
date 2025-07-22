@@ -4,9 +4,16 @@ import ProfileCard from "./ProfileCard";
 import { useNavigate } from "react-router-dom";
 
 function NavMenu() {
+  const [input, setInput] = useState("");
+
   const [searchText, setSearchText] = useState("");
   const [showProfile, setShowProfile] = useState(false);
   const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate(`/response?query=${encodeURIComponent(input)}`);
+  };
 
   const handleMenuClick = (label) => {
     if (label === "Me") {
@@ -29,10 +36,17 @@ function NavMenu() {
     <>
       <div className="nav-container">
         <div className="search-bar">
-          <input type="text" placeholder="Ask me anything..." />
-          <button>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="Ask me anything..."
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
         </div>
         <div className="menu-buttons" style={{ position: "relative" }}>
           {menuItems.map((item, index) => (
@@ -40,7 +54,7 @@ function NavMenu() {
               href={item.link}
               key={index}
               className="menu-button"
-              onClick={()=> handleMenuClick(item.label)}
+              onClick={() => handleMenuClick(item.label)}
             >
               <div className="icon">{item.iconClass}</div>
               <div className="label">{item.label}</div>
